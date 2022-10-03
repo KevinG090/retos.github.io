@@ -30,6 +30,7 @@ function detectarOperador(op) {
 document.querySelector(".igual").addEventListener("click",() =>{
     try{
         if (valorNuevo.innerHTML == "" || operacion == "" || valorAnterior.innerHTML == "" )throw "operacion incorrecta";
+        else if (operacion == "/" && valorNuevo.innerHTML == 0) throw "operacion incorrecta";
         let resultado = detectarOperador(operacion)
         operacion="";
         valorAnterior.innerHTML="";
@@ -45,10 +46,9 @@ document.querySelector(".igual").addEventListener("click",() =>{
 
 signo.forEach(op => {
     op.addEventListener("click",() =>{
-        console.log("operador")
         if (operacion != "") operacion=op.innerHTML;
-        else if (operacion == "") {
-            valorAnterior.innerHTML = valorNuevo.innerHTML;
+        else if (operacion == "") {       
+            valorAnterior.innerHTML = `${valorNuevo.innerHTML} ${op.innerHTML}`;
             valorNuevo.innerHTML = "";
             operacion = op.innerHTML;
         }
