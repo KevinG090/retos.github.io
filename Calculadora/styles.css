@@ -1,0 +1,196 @@
+:root {
+    --background-color:#5e5e5e;
+    --calculator-color:#040404;
+    --top-buttons:#a4a4a4;
+    --op-buttons:#fd9502;
+    --letters-colors:#ccc;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: var(--background-color);
+}
+.contenedor-calculadora {
+    display:flex;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    justify-content: center;
+    /* vertical-align: middle; */
+}
+.calculadora {
+    width: 50%;
+    margin: auto;
+    background: var(--calculator-color);
+    padding: 1rem 0.5rem;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.valor-anterior {
+    width: 100%;
+    height: 20px;
+    text-align: end;
+    color: var(--letters-colors);
+}
+.valor-nuevo {
+    font-size: 25px;
+    width: 100%;
+    height: 25px;
+    color: var(--letters-colors);
+    margin-right: 10px;
+    text-align: end;
+}
+.tabla {
+    width: 100%;
+    margin-top:10px ;
+    border-spacing: 4px 3px;
+}
+.tabla tr {
+    margin: 5px;
+}
+.tabla button {
+    width: 30px;
+    /* margin: auto; */
+    padding: 7px;
+    border-radius: 50%;
+}
+.sup {
+    background: var(--top-buttons);
+}
+.op,.igual {
+    background: var(--op-buttons);
+}
+.numero,.punto {
+    background: var(--background-color);
+}
+
+.botones {
+    width: 15px;
+    /* margin: auto; */
+    padding: 7px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    /* background: none; */
+    color: #ccc;
+}
+.tabla .num0 {
+    width: 100%;
+    border-radius: 15px;
+}
+@media screen and (min-width:400px) {
+    .tabla button {
+        width: 40px;
+        height: 40px;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        /* padding: 7px; */
+        border-radius: 20px;
+    }
+}
+@media screen and (min-width:550px) {
+    .valor-anterior {
+        width: 100%;
+        font-size: 20px;
+        height: 25px;
+        text-align: end;
+        color: var(--letters-colors);
+    }
+    .valor-nuevo {
+        font-size: 30px;
+        width: 100%;
+        height: 35px;
+        color: var(--letters-colors);
+        margin-right: 10px;
+        text-align: end;
+    }
+    .tabla button {
+        width: 50px;
+        height: 50px;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        /* padding: 7px; */
+        border-radius: 50%;
+    }
+    .tabla .num0 {
+        width: 100%;
+        border-radius: 15px;
+    }
+}
+@media screen and (min-width:800px) {
+    .tabla button {
+        width: 90%;
+        height: 40px;
+        margin: 3px auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        /* padding: 7px; */
+        border-radius: 20px;
+    }
+    .tabla .num0 {
+        width: 95%;
+        border-radius: 20px;
+    }
+}
+@media screen and (min-width:1000px) {
+    .valor-anterior {
+        width: 100%;
+        font-size: 30px;
+        height: 40px;
+        text-align: end;
+        color: var(--letters-colors);
+    }
+    .valor-nuevo {
+        font-size: 45px;
+        width: 100%;
+        height: 50px;
+        color: var(--letters-colors);
+        text-align: end;
+    }
+    .tabla button {
+        width: 85%;
+        height: 50px;
+        font-size: 25px;
+        margin: 3px auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        /* padding: 7px; */
+        border-radius: 20px;
+    }
+}
+@media screen and (min-width:1500px) {
+    .valor-anterior {
+        width: 100%;
+        font-size: 45px;
+        height: 70px;
+        text-align: end;
+        color: var(--letters-colors);
+    }
+    .valor-nuevo {
+        font-size: 60px;
+        width: 100%;
+        height: 100px;
+        color: var(--letters-colors);
+        text-align: end;
+    }
+    .tabla button {
+        width: 85%;
+        height: 50px;
+        font-size: 25px;
+        margin: 3px auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        /* padding: 7px; */
+        border-radius: 20px;
+    }
+}
