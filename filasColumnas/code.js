@@ -23,15 +23,9 @@ document.querySelector(".btnCrear").addEventListener("click",() =>{
         alert(e)
     }
 })
-function crearTabla () {
-    let tabla =`<table class="segundaTabla"></table>`;
-    document.querySelector(".btnTransferir").insertAdjacentHTML("afterend",tabla)
-}
 
 function cargarDatos () {
     document.querySelector(".btnTransferir").addEventListener("click",() =>{
-        // let cantColum = document.querySelectorAll("td").length;
-
         let tabla =`<table class="segundaTabla"></table>`;
         document.querySelector(".btnTransferir").insertAdjacentHTML("afterend",tabla)
         let cantFilas = document.querySelectorAll("tr");
@@ -42,7 +36,6 @@ function cargarDatos () {
         for (let j = 0 ; j < cantColum ; j++){
             let crearFilas = document.createElement("TR");
             crearFilas.classList.add(`row${j+1}`);
-            console.log("hola")
             document.querySelector(`.segundaTabla`).appendChild(crearFilas)
             const columas = document.querySelectorAll(`.columna${j+1}`);
             columas.forEach((colum)=>{
