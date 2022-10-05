@@ -8,8 +8,16 @@
     <title>Document</title>
 </head>
 <body>
-    <section class="container">
-        <div></div>
+    <section class="container-rowsColums">
+        <div class="cont rows">
+            <label for="row">Filas</label>
+            <input class="row" type="number" name="row" pattern="^[0-9]" title='Only Number' min="1" step="1">
+        </div>
+        <div class="cont colums">
+            <label for="colum">Columnas</label>
+            <input class="colum" type="number" name="colum" pattern="^[0-9]" title='Only Number' min="1" step="1">
+        </div>
+        <input class="btnCrear" type="button" value="crear">
     </section>
     <script src="code.js"></script>
 </body>

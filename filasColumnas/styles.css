@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container-rowsColums{
+    width: 50%;
+    margin: 50px auto;
+}
+.cont{
+    display: flex;
+    margin-bottom:15px ;
+    flex-direction: column;
+}
+.cont label{
+    font-weight: 700;
+}
+input[type=button]{
+    display: flex;
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+}
