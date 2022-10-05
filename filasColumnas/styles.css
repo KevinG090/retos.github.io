@@ -20,3 +20,11 @@ input[type=button]{
     margin: auto;
     text-align: center;
 }
+.tabla{
+    width: 100%;
+}
+td input {
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
