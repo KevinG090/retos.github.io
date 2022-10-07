@@ -3,12 +3,13 @@
     padding: 0;
 }
 .container-rowsColums{
-    width: 50%;
+    width: 100%;
     margin: 50px auto;
 }
 .cont{
+    width: 50%;
     display: flex;
-    margin-bottom:15px ;
+    margin: auto auto 15px auto ;
     flex-direction: column;
 }
 .cont label{
@@ -27,4 +28,15 @@ td input {
     width: 80%;
     display: flex;
     margin: auto;
+}
+.containerRest , .containerTransferir{
+    /* position: absolute; */
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+}
+.containerRest div , .containerTransferir div{
+    display: flex;
+    flex-direction: column;
 }
