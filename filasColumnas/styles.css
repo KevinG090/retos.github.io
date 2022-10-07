@@ -30,7 +30,6 @@ td input {
     margin: auto;
 }
 .containerRest , .containerTransferir{
-    /* position: absolute; */
     width: 100%;
     display: flex;
     margin: auto;
